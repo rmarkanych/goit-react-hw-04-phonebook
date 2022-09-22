@@ -1,0 +1,25 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 100px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: lightgray;
+  border: none;
+  border-radius: 5px;
+}
+.wrapper h3 {
+  color: rgb(224, 109, 21);
+}

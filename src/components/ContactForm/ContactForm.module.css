@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  margin-top: 10px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: lightgray;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
