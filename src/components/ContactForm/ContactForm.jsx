@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Title from 'components/Title/Title';
 import s from '../ContactForm/ContactForm.module.css';
 
-const ContactForm = ({ handlerInputChange, handlerSubmit }) => {
+const ContactForm = ({ handlerSubmit, inputNameChange, inputNumberChange }) => {
   return (
     <form
       className={s.form}
@@ -19,7 +19,7 @@ const ContactForm = ({ handlerInputChange, handlerSubmit }) => {
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           onChange={e => {
-            handlerInputChange(e);
+            inputNameChange(e);
           }}
         />
       </label>
@@ -32,7 +32,7 @@ const ContactForm = ({ handlerInputChange, handlerSubmit }) => {
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
           onChange={e => {
-            handlerInputChange(e);
+            inputNumberChange(e);
           }}
         />
       </label>
@@ -43,7 +43,6 @@ const ContactForm = ({ handlerInputChange, handlerSubmit }) => {
   );
 };
 ContactForm.propTypes = {
-  handlerInputChange: PropTypes.func,
   handlerSubmit: PropTypes.func,
 };
 export default ContactForm;
